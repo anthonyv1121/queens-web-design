@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{{description}}">
+    <meta name="google-site-verification" content="bCaZMs5Nub1ZA42FbQU3RMXxqwPtTM7C7V3dPIlNJzk" />
+ 
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    {{#if article}}
+        <meta name="author" content="Queens Web Design And Graphics">
+    {{/if}}
+    <title>{{title}}</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37430508-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-37430508-1');
+    </script>
+    {{#if hasAds}}
+        <!-- Global Adsense -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-7422899062203849",
+            enable_page_level_ads: true
+        });
+    </script>
+    {{/if}}
+    
+</head>
+
+<body class="{{name}} sky__theme">
+
+  {{>header}}

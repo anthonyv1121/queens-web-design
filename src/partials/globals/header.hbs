@@ -1,0 +1,33 @@
+<div class="nav-container">
+    {{> mobile-header}}
+    <!--end bar-->
+    <nav id="qwdNav" class="bar bar-2 hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 text-center text-left-sm hidden-xs order-md-2">
+                    <div class="bar__module">
+                        {{> logo}}
+                    </div>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <div class="bar__module">
+                        {{> nav}}
+                    </div>
+                    <!--end module-->
+                </div>
+                <div class="col-md-5 text-left-xs order-md-3" id="header_phone-email">
+                    <div class="bar__module">
+                        <a class="h4 phone" href="tel:1-{{> phone-number }}">{{> phone-number }}</a>
+                        <a class="btn btn--sm btn--primary type--uppercase" href="#contact">
+                            <span class="btn__text">Get A Free Quote</span>
+                        </a>
+                    </div>
+                    <!--end module-->
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </nav>
+    <!--end bar-->
+</div>

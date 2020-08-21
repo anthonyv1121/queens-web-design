@@ -1,0 +1,32 @@
+.background-image-holder svg{
+    position: absolute;
+}
+.cloud{fill:#f5fbfe;}
+#cloud-1{
+    left: 2%;
+    top: 3%;
+    width: 16%;
+}
+#cloud-2{
+    width: 9%;
+    left: 14%;
+    top: 8%;
+    
+    .cloud{
+        fill:#fff;
+    }
+}
+#cloud-3 {
+    width: 14%;
+    top: 16%;
+    left: 56%;
+
+    .cloud{
+        fill:#fff;
+    }
+}
+#cloud-4 {
+    right: 0;
+    width: 16%;
+    top: 1%;
+}

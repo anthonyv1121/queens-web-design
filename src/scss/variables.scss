@@ -1,0 +1,50 @@
+/*colors*/
+$primary: #1f769a;
+$primaryHover: #1981ac;
+$primaryActive: #0b6f99;
+$primaryDark: #0c445a;
+$secondary: #92dd7c;
+$dark:#252525;
+$bodyText:#666;
+$gray: #f4f4f4;
+$lightGray: #f9f9f9;
+$errorHighlight: #EBA8A8;
+$error: #D84D4D;
+$success: #2cb006;
+
+$themes: (
+    skyTheme: (
+      base: rgba(212,239,252,1),
+      r: 212,
+      g: 239,
+      b: 252,
+    )
+);
+
+
+/*fonts*/
+$thin:300;
+$regular: 400;
+$semiBold: 600;
+$bold: 700;
+$extraBold: 800;
+%trebuchet{
+    font-family: Trebuchet MS,TrebuchetMS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
+}
+%paytone{
+    font-family: 'Paytone One', sans-serif;
+}
+
+
+/*logo*/
+$logoMHeight:4em;
+
+/*Mixins*/
+@mixin backgroundColor($theme, $a) {
+    background-color: rgba(
+        map-get(map-get($themes, $theme), r),
+        map-get(map-get($themes, $theme), g),
+        map-get(map-get($themes, $theme), b),
+        $a
+    )
+}

@@ -1,0 +1,265 @@
+body.home {
+  &.sky__theme--food-truck {
+    #home.imagebg {
+      // @media all and (max-height: 585px) {
+      //   height: 65vh;
+      // }
+      .background-image-holder {
+        background-color: transparent;
+        background-size: contain !important;
+        background-position: 61% 50% !important;
+
+        @media all and (max-width: 767px) {
+          // background-position: 50 -40px !important;
+        }
+      }
+    }
+  }
+  &.sky__theme--storefront {
+    #home.imagebg {
+      .background-image-holder {
+        background-position: 50% 50% !important;
+        @include backgroundColor(skyTheme, 0.65);
+        @media all and (min-width: 1700px) {
+          background-repeat: repeat-x;
+        }
+      }
+
+      @media all and (max-width: 767px) {
+        .background-image-holder {
+          background-image: url("/images/queens-web-design-storefront-static.png") !important;
+        }
+      }
+    }
+    #marquee-wrapper {
+      height: 1070px;
+      width: 100%;
+      position: static;
+      display: none;
+      @media all and (min-width: 768px) {
+        display: block;
+      }
+
+      #marquee {
+        width: 190px;
+        height: 33px;
+        padding-top: 2px;
+        position: absolute;
+        overflow: hidden;
+        top: 630px;
+        left: 540px;
+        background: linear-gradient(0deg, #111, #222);
+        box-shadow: 0px 0px 2px 0px #aaa inset, 0px -1px 2px 0px #aaa inset,
+          2px -3px 3px 0px rgba(0, 0, 0, 0.5) inset,
+          0px -3px 3px 0px rgba(0, 0, 0, 0.5) inset,
+          2px 3px 3px 0px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+
+        #marquee_text {
+          position: relative;
+        }
+      }
+    }
+    #taxiWrapper {
+      height: 1070px;
+      left: 0;
+      top: 0;
+    }
+    #taxi {
+      width: 317px;
+      position: absolute;
+      bottom: 70px;
+      left: 100vw;
+      display: none;
+
+      .cls-1 {
+        fill: #fbcd1c;
+      }
+      .cls-2 {
+        fill: #6d6e71;
+      }
+      .cls-3 {
+        fill: #231f20;
+      }
+      .cls-4 {
+        fill: #808285;
+      }
+      .cls-5 {
+        fill: #be1e2d;
+      }
+      .cls-6 {
+        fill: #fff;
+      }
+    }
+  }
+  #home {
+    &.imagebg {
+      height: 100vh;
+      padding: 0;
+
+      @media all and (min-width: 768px) {
+        position: static;
+        height: auto;
+
+        .background-image-holder {
+          position: static;
+          height: 1070px;
+          // background-position: 0 0;
+
+          background-size: 1700px !important;
+        }
+
+        .hero-message {
+          position: absolute;
+          width: 100%;
+          max-width: none;
+          top: 185px;
+        }
+      }
+    }
+    // default background color for home hero
+    background: -moz-linear-gradient(
+      90deg,
+      rgb(223, 235, 241) 0%,
+      rgb(234, 246, 252) 100%
+    );
+    background: -webkit-linear-gradient(
+      90deg,
+      rgb(223, 235, 241) 0%,
+      rgb(234, 246, 252) 100%
+    );
+    background: -ms-linear-gradient(
+      90deg,
+      rgb(223, 235, 241) 0%,
+      rgb(234, 246, 252) 100%
+    );
+    background: linear-gradient(
+      90deg,
+      rgb(223, 235, 241) 0%,
+      rgb(234, 246, 252) 100%
+    );
+
+    .hero-message {
+      top: 10%;
+
+      .typed-headline {
+        span {
+          display: inline;
+          @media all and (min-width: 768px) {
+            font-size: 2em;
+          }
+          @media all and (max-width: 767px) {
+            font-size: 1.25em;
+          }
+          // @media all and (min-width: 992px) and (max-height: 579px) {
+          //   display: none;
+          // }
+
+          font-weight: $thin;
+
+          &:first-of-type {
+            color: #808080;
+          }
+          &:nth-of-type(2) {
+            font-weight: $semiBold;
+            @media all and (min-width: 768px) {
+              margin-left: 7px;
+            }
+          }
+        }
+      }
+    }
+
+    h1 {
+      font-weight: $bold;
+      color: $dark;
+      margin-bottom: 0;
+      line-height: 58px;
+
+      @media all and (min-width: 1200px) {
+        font-size: 5em;
+      }
+      @media all and (min-width: 992px) and (max-width: 1199px) {
+        font-size: 4em;
+      }
+      @media all and (min-width: 768px) and (max-width: 991px) {
+        font-size: 4.25em;
+      }
+      @media all and (max-width: 767px) {
+        line-height: 1.25em;
+        // font-size: 3em;
+      }
+
+      &:first-letter {
+        @extend %trebuchet;
+        font-size: 1.1em;
+        letter-spacing: -3px;
+      }
+    }
+
+    h2 {
+      color: $dark;
+      margin-bottom: 15px;
+
+      @media all and (min-width: 1200px) {
+        font-size: 4em;
+      }
+      @media all and (min-width: 992px) and (max-width: 1199px) {
+        font-size: 3.25em;
+      }
+      @media all and (max-width: 767px) {
+        margin-bottom: 5px;
+        // font-size: 2.25em;
+      }
+    }
+  }
+  .background-image-holder {
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (min-width: 768px) {
+    // h2 {
+    //     font-size: 48px;
+    // }
+  }
+
+  #affordable-websites {
+    padding-bottom: 5em;
+    @media screen and (min-width: 768px) {
+      img {
+        margin-top: -50px;
+      }
+    }
+  }
+
+  #contact {
+    @media screen and (max-width: 991px) {
+      .heading-block {
+        margin-bottom: 0;
+      }
+    }
+
+    ul {
+      @media screen and (max-width: 991px) {
+        margin-bottom: 30px;
+      }
+      & > li {
+        margin-bottom: 10px;
+        .icon {
+          @media all and (max-width: 359px) {
+            font-size: 20px;
+          }
+          &.icon-Old-Telephone {
+            @media all and (min-width: 360px) {
+              font-size: 2.7em;
+            }
+          }
+        }
+      }
+    }
+
+    form .col-lg-6:last-of-type {
+      margin-bottom: 0.92857143em;
+    }
+  }
+}

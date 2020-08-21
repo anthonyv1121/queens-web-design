@@ -1,0 +1,158 @@
+div[data-theme]{
+    & > .scene {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        & > * {
+            position: relative;
+        }
+        & > #street-objects {
+            top: 38px;
+            z-index: 3;
+            width: 992px;
+
+        }
+        & > img{
+            margin: 0 auto;
+        }
+        
+        .sidewalk, 
+        .street {
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: repeat-x;
+        }
+        .sidewalk {
+            background-image: url("/images/storefront-theme-sidewalk.png");
+            z-index: 2;
+            height: 59px;;
+        }
+        .street{
+            background-image: url("/images/storefront-theme-street.png");
+            bottom: 0px;
+            z-index: 1;
+            height: 191px;
+            
+            @media all and (max-height: 767px) {
+                display: none;
+            }
+        }
+        @media all and (min-height: 768px) and (max-height: 899px) {
+            #street-objects{
+                width: 900px;
+            }
+            .street{
+                height: 100px;
+            }
+            .sidewalk{
+                height: 40px;
+            }
+        }
+        
+    }
+}
+
+//FOR CSS FLICKER ANIMATION: see flicker() in marquee.js
+.neon {
+    text-align: center;
+    font-size: 38px;
+    color: #00ffff;
+    font-family: Iceland;
+ 
+    // font-family: Iceland;
+    text-transform: uppercase;
+    // -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    // -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    // animation: neon1 1.5s ease-in-out infinite alternate;
+
+    // -webkit-animation: neon1 2.5s ease-in-out infinite alternate;
+    // -moz-animation: neon1 2.5s ease-in-out infinite alternate;
+    // animation: neon1 2.5s ease-in-out infinite alternate;
+
+    
+    
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
+.neon > .flicker{
+    // color: rgba(255,255,255,0.1);
+    // -webkit-animation: none;
+    // -moz-animation: none;
+    // animation: none;
+  
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+   
+    // -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+    // -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+    // animation: neon2 1.5s ease-in-out infinite alternate;
+  }
+  
+ 
+
+  /*glow for webkit*/
+  
+  @-webkit-keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px rgba(0,255,255,0.2), 0 0 70px rgba(0,255,255,0.2), 0 0 80px rgba(0,255,255,0.2), 0 0 100px rgba(0,255,255,0.2), 0 0 150px rgba(0,255,255,0.2);
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px rgba(0,255,255,0.2), 0 0 35px rgba(0,255,255,0.2), 0 0 40px rgba(0,255,255,0.2), 0 0 50px rgba(0,255,255,0.2), 0 0 75px rgba(0,255,255,0.2);
+    }
+  }
+  
+  @-webkit-keyframes neon2 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+    }
+  }
+  
+ 
+  /*glow for mozilla*/
+  
+  @-moz-keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px rgba(0,255,255,0.2), 0 0 70px rgba(0,255,255,0.2), 0 0 80px rgba(0,255,255,0.2), 0 0 100px rgba(0,255,255,0.2), 0 0 150px rgba(0,255,255,0.2);
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px rgba(0,255,255,0.2), 0 0 35px rgba(0,255,255,0.2), 0 0 40px rgba(0,255,255,0.2), 0 0 50px rgba(0,255,255,0.2), 0 0 75px rgba(0,255,255,0.2);
+    }
+  }
+  
+  @-moz-keyframes neon2 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+    }
+  }
+  
+ 
+  /*glow*/
+  
+  @keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px rgba(0,255,255,0.2), 0 0 70px rgba(0,255,255,0.2), 0 0 80px rgba(0,255,255,0.2), 0 0 100px rgba(0,255,255,0.2), 0 0 150px rgba(0,255,255,0.2);
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px rgba(0,255,255,0.2), 0 0 35px rgba(0,255,255,0.2), 0 0 40px rgba(0,255,255,0.2), 0 0 50px rgba(0,255,255,0.2), 0 0 75px rgba(0,255,255,0.2);
+    }
+  }
+  
+  @keyframes neon2 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #92dd7c, 0 0 70px #92dd7c, 0 0 80px #92dd7c, 0 0 100px #92dd7c, 0 0 150px #92dd7c;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #92dd7c, 0 0 35px #92dd7c, 0 0 40px #92dd7c, 0 0 50px #92dd7c, 0 0 75px #92dd7c;
+    }
+  }
+  

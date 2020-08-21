@@ -1,0 +1,23 @@
+#main {
+    background-image: url('/images/sample.jpg');
+    height: 500px;
+    width: 500px;
+}
+@import "variables";
+@import "utilities";
+@import "~bootstrap/scss/bootstrap";
+@import "lightbox";
+@import "flickity";
+@import "jquery.steps";
+@import "theme";
+@import "svg";
+@import "stack-interface";
+@import "iconsmind";
+@import "socicon";
+@import "home";
+@import "fonts";
+@import "custom";
+
+// body{
+//     background: $color;
+// }

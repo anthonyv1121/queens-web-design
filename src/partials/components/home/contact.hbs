@@ -1,0 +1,119 @@
+<section id="contact">
+    <div class="container">
+        <div class="row justify-content-center heading-block text-center">
+            <div class="col-md-10 col-lg-8">
+                <h2>Need A Quote? </h2>
+            </div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-lg-5 order-lg-2">
+                <p class="lead">
+                    If you would like to receive a <strong>FREE</strong> quote on a project that you need help with
+                    please fill out the form and we will get back to you as soon as possible. <br> <br>
+
+                    If you have general inquiries or would like to learn more about our services please use either
+                    contact method below. Thank you.
+                </p>
+                <ul>
+                    <li><a href="mailto:{{> ../../globals/email-address }}" class="row"><i class="icon icon--md icon-Mail"></i> <span class="semi-bold">{{> ../../globals/email-address }}</span></a></li>
+                    <li><a href="tel:1-{{> ../../globals/phone-number }}" class="row"><i class="icon icon--md icon-Old-Telephone"></i> <span class="semi-bold">{{> ../../globals/phone-number }}</span></a></li>
+                </ul>
+
+            </div>
+            <div class="col-lg-7 col-12 order-lg-1">
+                <div class="boxed boxed--border">
+                    <form class="text-left form-email row mx-0" id="quote-form" data-success="Message sent. You are being redirected..."
+                        data-error="Please fill in all required fields." novalidate="true">
+                        <div class="col-12">
+                            <span class="required">Name:</span>
+                            <input type="text" name="name" id="name" class="validate-required">
+                        </div>
+                        <div class="col-12 mt--1">
+                            <span class="required">Email Address:</span>
+                            <input type="email" name="email" id="email" class="validate-required validate-email">
+                        </div>
+                        <div class="col-12 mt--1">
+                            <span>Phone:</span>
+                            <input type="tel" name="phone" id="phone">
+                        </div>
+                        <div class="col-12 mt--1">
+                            <span>Current Website:</span>
+                            <input type="text" name="currentWebsite" id="currentWebsite">
+                        </div>
+                        <div class="col-12 mt--1">
+                            <span class="required">Services Needed:</span>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="input-checkbox">
+                                <input type="checkbox" name="new-website" id="new-website">
+                                <label for="new-website"></label>
+                            </div>
+                            <span>New Website</span>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="input-checkbox">
+                                <input type="checkbox" name="website-update" id="website-update">
+                                <label for="website-update"></label>
+                            </div>
+                            <span>Existing Website Update</span>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="input-checkbox">
+                                <input type="checkbox" name="web-maintenance" id="web-maintenance">
+                                <label for="web-maintenance"></label>
+                            </div>
+                            <span>Ongoing Website Maintenance</span>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="input-checkbox">
+                                <input type="checkbox" name="mobile-app-dev" id="mobile-app-dev">
+                                <label for="mobile-app-dev"></label>
+                            </div>
+                            <span>Mobile App Development</span>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="input-checkbox">
+                                <input type="checkbox" name="graphic-design" id="graphic-design">
+                                <label for="graphic-design"></label>
+                            </div>
+                            <span>Logo / Graphic Design</span>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="input-checkbox">
+                                <input type="checkbox" name="seo" id="seo">
+                                <label for="seo"></label>
+                            </div>
+                            <span>SEO / Online Marketing</span>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="input-checkbox">
+                                <input type="checkbox" name="animation" id="animation">
+                                <label for="animation"></label>
+                            </div>
+                            <span>Animation</span>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="input-checkbox">
+                                <input type="checkbox" name="other" id="other">
+                                <label for="other"></label>
+                            </div>
+                            <span>Other</span>
+                        </div>
+                        <div class="col-12 mt--1">
+                            <span class="required">Project Description / Information:</span>
+                            <textarea rows="4" name="description" id="description" class="validate-required"></textarea>
+                        </div>
+                        <div class="col-12 g-recaptcha mt--1" data-sitekey="6Le6lH4UAAAAAB8kuUl_HpT-vBUj66jCO6h-7ZI_"></div>
+                        <div class="col-12 mt--1">
+                            <button type="submit" class="btn btn--primary type--uppercase">Submit</button>
+                        </div>
+                        <div class="col-12 mt--1 returnMessage hidden">Message</div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--end of row-->
+    </div>
+    <!--end of container-->
+</section>

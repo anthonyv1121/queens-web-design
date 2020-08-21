@@ -1,0 +1,49 @@
+<div class="col-lg-4">
+    <div class="sidebar boxed boxed--lg">
+        {{#if isSeo}}
+             <div class="sidebar__widget">
+            <h5>Professional SEO Services in Queens and Long Island</h5>
+            <p>
+We combine proven strategies and creative ideas to give your business ROI driven results.  We can help you reach your target market and get your products or services in front of people who are already looking for what you have to offer. Contact us for a FREE consultation on we can create a customized SEO strategy for your business.</p>
+        </div>
+    {{/if}}
+        <div class="sidebar__widget">
+            <h5>Join Our Email List</h5>
+            {{> ../../../globals/mailing-list-discount}}
+            {{!-- {{> ../../../globals/signup-form}} --}}
+            <a class="btn btn--lg btn--primary type--uppercase" href="http://eepurl.com/bKbCgn" target="_blank"><span
+                    class="btn__text">Sign-up!</span></a>
+        </div>
+        <!--end widget-->
+        <div class="sidebar__widget">
+            <h5>Business Articles</h5>
+            {{> ../../../globals/articles-list}}
+        </div>
+        <!--end widget-->
+   
+
+        <div class="sidebar__widget">
+            <h5>Queens / Long Island Web Design Network</h5>
+            {{> ../../../globals/network-links class=" "}}
+        </div>
+        <!--end widget-->
+        <div class="sidebar__widget">
+            <h5>Web Design Services</h5>
+            <ul>
+                <li>
+                    <a href="/services" title="Queens Web Design and Mobile App Development">Web Design, Mobile App
+                        Services</a>
+                </li>
+                <li>
+                    <a href="/services/union-websites.html" title="Queens Web Design - Website Maintenance">Website
+                        Maintenance</a>
+                </li>
+                <li>
+                    <a href="/web-design-tutor.html" title="Queens Web Design - Learn Web Design and Programming">Web
+                        Design and Coding Lessons</a>
+                </li>
+            </ul>
+        </div>
+        <!--end widget-->
+    </div>
+</div>
