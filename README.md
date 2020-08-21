@@ -2,9 +2,11 @@
 
 > This is the website source used to build the website [Queens Web Design](http://queenswebdesignandgraphics.com/).
 
+![](https://anthonyvlombardo.com/wp-content/uploads/2020/08/nyc-web-design.jpg)
+
 This project uses Boostrap and ES6 and was built using Babel, Webpack and Handlebars.js
 
-## Noteable scripts:
+## Noteable Scripts:
 
 App container and instantiation:
 
@@ -42,7 +44,7 @@ Custom Page Scrolling:
 src/scripts/components/SmoothScroll.js
 ```
 
-## Available Scripts
+## Project Scripts
 
 In the project directory, you can run:
 
