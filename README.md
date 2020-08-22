@@ -8,41 +8,17 @@ This project uses Boostrap and ES6 and was built using Babel, Webpack and Handle
 
 ## Noteable Scripts:
 
-App container and instantiation:
+**App container and instantiation:** [index.js](https://github.com/anthonyv1121/queens-web-design/tree/master/src/index.js)
 
-```sh
-src/index.js
-```
+**Flicker animation of store window sign:** [Flickers.js](https://github.com/anthonyv1121/queens-web-design/tree/master/src/scripts/animations/Flickers.js)
 
-Flicker animation of window sign:
+**Taxi car animation:** [Taxi.js](https://github.com/anthonyv1121/queens-web-design/tree/master/src/scripts/animations/Taxi.js)
 
-```sh
-src/scripts/animations/Flickers.js
-```
+**Typing animation:** [Typed.js](https://github.com/anthonyv1121/queens-web-design/tree/master/src/scripts/animations/Typed.js)
 
-Taxi car animation:
+**Theme configuarion:** [Theme.js](https://github.com/anthonyv1121/queens-web-design/tree/master/src/scripts/theme/Theme.js)
 
-```sh
-[Taxi.js](https://github.com/anthonyv1121/queens-web-design/tree/master/src/scripts/animations/Taxi.js)
-```
-
-Typing animation:
-
-```sh
-src/scripts/animations/Typed.js
-```
-
-Theme configuarion:
-
-```sh
-src/scripts/theme/Theme.js
-```
-
-Custom Page Scrolling:
-
-```sh
-src/scripts/components/SmoothScroll.js
-```
+**Custom Page Scrolling:** [SmoothScroll.js](https://github.com/anthonyv1121/queens-web-design/tree/master/src/scripts/components/SmoothScroll.js)
 
 ## Project Scripts
 
