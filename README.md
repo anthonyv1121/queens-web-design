@@ -23,7 +23,7 @@ src/scripts/animations/Flickers.js
 Taxi car animation:
 
 ```sh
-src/scripts/animations/Taxi.js
+[Taxi.js](https://github.com/anthonyv1121/queens-web-design/tree/master/src/scripts/animations/Taxi.js)
 ```
 
 Typing animation:
